@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Tower Fun4Four</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <div class="header">
+            <div class="stat">RUNDE: <span id="round-num">1</span>/8</div>
+            <div class="title">MAGIC TOWER PRO</div>
+            <div class="stat">PUNKTE: <span id="player-score">0</span></div>
+        </div>
+        
+        <div id="main-player-area">
+            <div id="tower-container"></div>
+            
+            <div class="controls">
+                <div id="deck-container">
+                    <div class="card-back" id="draw-pile"></div>
+                    <div id="current-target-card" class="card"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="opponents">
+            <div class="opp-slot" id="opp-2"><span>P2</span><div class="opp-status">Aktiv</div><div class="mini-score">0</div><div class="skel">💀</div></div>
+            <div class="opp-slot" id="opp-3"><span>P3</span><div class="opp-status">Aktiv</div><div class="mini-score">0</div><div class="skel">💀</div></div>
+            <div class="opp-slot" id="opp-4"><span>P4</span><div class="opp-status">Aktiv</div><div class="mini-score">0</div><div class="skel">💀</div></div>
+        </div>
+
+        <div id="timer-wrapper">
+            <div id="timer-bar"></div>
+        </div>
+    </div>
+
+    <div id="rank-overlay" class="hidden">
+        <div class="rank-box">
+            <h2>TOP 10 RANKING</h2>
+            <ul id="rank-list"></ul>
+            <button onclick="location.reload()">NEUSTART</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
